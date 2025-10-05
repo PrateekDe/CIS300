@@ -9,14 +9,14 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="skip" href="#main">Skip to content</a>
+    <!-- <a class="skip" href="#main">Skip to content</a> -->
     <div class="container header-row">
       <div class="logo">Wings Across Borders</div>
       <nav class="nav" aria-label="Primary">
         <a aria-current="page" href="index.html">Home</a>
-        <a href="#basics">Basics</a>
-        <a href="#playbook">Playbook</a>
-        <a href="#bts">BTS</a>
+        <a href="basics.html">Basics</a>
+        <a href="playbook.html">Playbook</a>
+        <a href="bts.html">BTS</a>
         <a href="#contact">Contact</a>
         <a class="cta" href="#contact">Ask a Question</a>
       </nav>
@@ -29,7 +29,7 @@
         <p class="eyebrow">Guide for first‑time flyers</p>
         <h1>Fly smart, stress less.</h1>
         <p class="sub">First-time flyers, start here.</p>
-        <a class="btn primary" href="#basics">Get Started</a>
+        <a class="btn primary" href="basics.html">Get Started</a>
         <div class="hero-media" role="img" aria-label="Soft gradient hero visual"></div>
         <div class="kpis">
           <div class="kpi"><div class="num">3</div><div class="label">Step guides</div></div>
@@ -42,17 +42,17 @@
     <section class="features container">
       <h2 class="section-title">Explore</h2>
       <div class="cards">
-        <a class="card" href="#basics">
+        <a class="card" href="basics.html">
           <h3>Flying Basics</h3>
           <p>Lift, drag, turbulence — plain-English explainers.</p>
           <span class="text-link">Learn more</span>
         </a>
-        <a class="card" href="#playbook">
+        <a class="card" href="playbook.html">
           <h3>Travel Playbook</h3>
           <p>Pack smarter, breeze through security, avoid gotchas.</p>
           <span class="text-link">Learn more</span>
         </a>
-        <a class="card" href="#bts">
+        <a class="card" href="bts.html">
           <h3>Behind the Scenes</h3>
           <p>Pilots, ATC, crew — the people behind every safe landing.</p>
           <span class="text-link">Learn more</span>
@@ -122,8 +122,9 @@
         <label> Topic / Question
           <textarea name="topic" rows="4" required></textarea>
         </label>
-        <label class="check">
-          <input type="checkbox" name="consent"> OK to feature my question anonymously
+        <label class="check" style="display:flex; align-items:center; gap:0.45rem; margin-top:8px;">
+          <input type="checkbox" id="consent" name="consent" style="margin:0;" />
+          <span>OK to feature my question anonymously</span>
         </label>
         <button class="btn" type="submit">Submit</button>
       </form>
@@ -134,7 +135,7 @@
     <div class="container footer-grid">
       <small>© 2025 Prateek De — Wings Across Borders</small>
       <nav class="footer-links" aria-label="Footer">
-        <a href="index.html">Home</a><a href="#basics">Basics</a><a href="#playbook">Playbook</a><a href="#bts">BTS</a><a href="#contact">Contact</a>
+        <a href="index.html">Home</a><a href="basics.html">Basics</a><a href="playbook.html">Playbook</a><a href="bts.html">BTS</a><a href="#contact">Contact</a>
       </nav>
       <div class="contact-info">
         <span>Email: <strong>hello@wingsacrossborders.site</strong></span>
