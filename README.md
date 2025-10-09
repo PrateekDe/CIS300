@@ -37,25 +37,9 @@ The website highlights the entire flying experience — from preparation and pac
 - **JavaScript** — copy-to-clipboard functionality  
 - **Local Media Assets** — optimized videos and images  
 
----
-
-## 📁 Structure
-WingsAcrossBorders/
-├── index.html
-├── basics.html
-├── playbook.html
-├── bts.html
-├── contact.html
-├── styles.css
-└── assets/
-├── images/
-└── videos/
----
 
 ## 🚀 Live Demo
 - **Website:** [https://prateekde.github.io/CIS300/](https://prateekde.github.io/CIS300/)  
-- **Repository:** [https://github.com/PrateekDe/CIS300](https://github.com/PrateekDe/CIS300)
-
 ---
 
 ## ⚙️ Summary
