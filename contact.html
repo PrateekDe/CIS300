@@ -4,10 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Wings Across Borders</title>
-  <meta name="description" content="Ask a question about flying for the first time. We'll point you to simple, stress-free answers." />
+  <meta name="description" content="Plain-English guides for first-time flyers: basics, step-by-step, baggage rules, turbulence, and takeoff/landing." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 </head>
 <body class="contact-page">
   <!-- <a class="skip" href="#main">Skip to content</a> -->
@@ -45,7 +53,7 @@
 
       <div class="contact-center">
       <!-- FORM: rubric-friendly, email coded correctly, no server required -->
-      <form class="contact-form" action="mailto:hello@wingsacrossborders.site" method="post" enctype="text/plain">
+      <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); document.getElementById('form-status').textContent='Submitted ✅';">
         <div class="grid">
           <div>
             <label for="name">Name</label>
@@ -77,13 +85,10 @@
 
         <p class="muted" style="margin:.25rem 0 .75rem; font-size:.9rem;">We’ll only use your email to respond. No spam, ever.</p>
         <input type="submit" value="Submit" />
+        <p id="form-status" style="font-weight:600; color:green; margin-top:10px;"></p>
       </form>
       </div>
 
-      <p class="muted" style="margin-top:.6rem">
-        Tip: If your email client doesn’t open automatically, you can email us at
-        <a href="mailto:hello@wingsacrossborders.site">hello@wingsacrossborders.site</a>.
-      </p>
     </section>
   </main>
 
@@ -99,7 +104,8 @@
       </div>
       <div class="contact-info">
         <strong>Email:</strong>
-        <a href="mailto:hello@wingsacrossborders.site">hello@wingsacrossborders.site</a>
+        <span id="contact-email">hello@wingsacrossborders.site</span>
+        <button type="button" class="btn" style="padding:.3rem .6rem; margin-left:8px;" onclick="navigator.clipboard.writeText('hello@wingsacrossborders.site'); this.textContent='Copied!';">Copy</button>
         <strong>FAA</strong>
         <a href="https://www.faa.gov/travelers" target="_blank" rel="noopener">Passengers</a>
       </div>

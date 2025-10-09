@@ -4,10 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wings Across Borders — Travel Playbook</title>
-  <meta name="description" content="Travel Playbook for first-time flyers: baggage rules comparison, packing tips, security checklist, and connection guidance." />
+  <meta name="description" content="Plain-English guides for first-time flyers: basics, step-by-step, baggage rules, turbulence, and takeoff/landing." />
   <meta name="keywords" content="baggage rules, carry-on, checked bag, packing tips, TSA security, flight connections, first-time flyers" />
   <meta name="author" content="Prateek De" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -29,7 +40,7 @@
     <p class="muted">Pack smarter, breeze through security, avoid gotchas.</p>
 
     <h2 class="section-title" style="text-align:left;margin:16px 0 10px;">Baggage rules (comparison)</h2>
-    <div class="table-wrap">
+    <div class="table-wrap theme-purple">
       <table aria-label="Baggage rules comparison">
         <thead>
           <tr>
@@ -108,11 +119,12 @@
     <div class="container footer-grid">
       <small>© 2025 Prateek De — Wings Across Borders</small>
       <nav class="footer-links" aria-label="Footer">
-        <a href="index.html">Home</a><a href="basics.html">Basics</a><a href="playbook.html">Playbook</a><a href="bts.html">BTS</a>
+        <a href="index.html">Home</a><a href="basics.html">Basics</a><a href="playbook.html">Playbook</a><a href="bts.html">BTS</a><a href="contact.html">Contact</a>
       </nav>
       <div class="contact-info">
-        <span>Email: <strong><a href="mailto:hello@wingsacrossborders.site">hello@wingsacrossborders.site</a></strong></span>
-        <a href="https://www.faa.gov/travelers" target="_blank" rel="noopener">FAA Passengers</a>
+        <span>Email: <strong id="contact-email">hello@wingsacrossborders.site</strong></span>
+        <button type="button" class="btn" style="padding:.3rem .6rem; margin-left:8px;" onclick="navigator.clipboard.writeText('hello@wingsacrossborders.site'); this.textContent='Copied!';">Copy</button>
+        <a href="https://www.faa.gov/travelers" target="_blank" rel="noopener">FAA Travelers (Passengers)</a>
       </div>
     </div>
   </footer>
