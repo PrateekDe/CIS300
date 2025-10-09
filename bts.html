@@ -4,19 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wings Across Borders — Behind the Scenes</title>
+  <meta name="description" content="Behind the scenes of safe air travel for first-time flyers: pilots, ATC, cabin crew, plus two short local videos showing in‑flight views and takeoff." />
+  <meta name="keywords" content="first-time flyers, behind the scenes, pilots, ATC, cabin crew, takeoff, in-flight video" />
+  <meta name="author" content="Prateek De" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
+    <!-- <a class="skip" href="#main">Skip to content</a> -->
     <div class="container header-row">
       <div class="logo">Wings Across Borders</div>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="basics.html">Basics</a>
-        <a href="playbook.html">Playbook</a>
-        <a aria-current="page" href="bts.html">BTS</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+<nav class="nav" aria-label="Primary">
+  <a href="index.html">Home</a>
+  <a href="basics.html">Basics</a>
+  <a href="playbook.html">Playbook</a>
+  <a href="bts.html">BTS</a>
+  <a href="contact.html">Contact</a>
+</nav>
     </div>
   </header>
 
@@ -34,21 +38,68 @@
     <div class="cards" style="gap:24px; margin-top:12px;">
       <article class="card" style="padding:16px;">
         <h3>In Flight — Above the Clouds</h3>
-        <video controls preload="metadata" poster="assets/1.jpg" playsinline style="width:100%; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,.1);">
-          <source src="assets/1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p class="muted" style="margin-top:8px;">A 10–20 second clip filmed through the window of an aircraft, showing the view of clouds and wings in flight.</p>
+        <figure style="margin:0">
+          <video controls preload="metadata" poster="assets/1.jpg" playsinline aria-describedby="cap-inflight" style="width:100%; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,.1);">
+            <source src="assets/1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption id="cap-inflight" class="muted" style="margin-top:8px;">A 10–20 second clip filmed through the window of an aircraft, showing the view of clouds and wings in flight.</figcaption>
+        </figure>
       </article>
 
       <article class="card" style="padding:16px;">
         <h3>Takeoff — From Runway to Sky</h3>
-        <video controls preload="metadata" poster="assets/2.jpg" playsinline style="width:100%; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,.1);">
-          <source src="assets/2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p class="muted" style="margin-top:8px;">A short video capturing a plane accelerating on the runway and lifting off into the air — highlighting the takeoff sequence.</p>
+        <figure style="margin:0">
+          <video controls preload="metadata" poster="assets/2.jpg" playsinline aria-describedby="cap-takeoff" style="width:100%; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,.1);">
+            <source src="assets/2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption id="cap-takeoff" class="muted" style="margin-top:8px;">A short video capturing a plane accelerating on the runway and lifting off into the air—highlighting the takeoff sequence.</figcaption>
+        </figure>
       </article>
+      <article class="card" style="padding:16px;">
+        <h3>Landing — Smooth Touchdown</h3>
+        <figure style="margin:0">
+          <video controls preload="metadata" poster="assets/4.jpg" playsinline aria-describedby="cap-landing" style="width:100%; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,.1);">
+            <source src="assets/4.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption id="cap-landing" class="muted" style="margin-top:8px;">An 8‑second local video showing a Swiss aircraft making a smooth descent and touchdown—capturing the moment of landing from runway view.</figcaption>
+        </figure>
+      </article>
+    </div>
+    <h2 class="section-title" style="text-align:left;margin:26px 0 12px;">Who makes flights safe — quick cards</h2>
+    <div class="cards" style="gap:18px; margin-top:12px;">
+      <article class="card"><h3>Flight Dispatch</h3><p>Builds the flight plan with routes, fuel, alternates, and performance limits.</p></article>
+      <article class="card"><h3>Maintenance Control</h3><p>Guides troubleshooting and ensures aircraft are airworthy before release.</p></article>
+      <article class="card"><h3>Line Maintenance</h3><p>Hands‑on techs who fix squawks, change tires, and clear MELs at the gate.</p></article>
+      <article class="card"><h3>Meteorology</h3><p>Analyzes METARs/TAFs, turbulence forecasts, and convective weather.</p></article>
+      <article class="card"><h3>Operations Control (AOC)</h3><p>Monitors the whole network; coordinates disruptions and swaps aircraft.</p></article>
+      <article class="card"><h3>Load Control</h3><p>Computes weight &amp; balance, sets CG limits, and produces the final load sheet.</p></article>
+      <article class="card"><h3>Baggage Team</h3><p>Sorts, scans, and loads bags to the correct hold positions for balance.</p></article>
+      <article class="card"><h3>Ramp Agents</h3><p>Marshalling, chocking, cones, loaders, and pushback coordination.</p></article>
+      <article class="card"><h3>Fuelers</h3><p>Refuel to planned kilos/pounds; verify quality and bonding/grounding.</p></article>
+      <article class="card"><h3>De‑icing Crew</h3><p>Removes contamination and protects surfaces with Type I/IV fluids.</p></article>
+      <article class="card"><h3>Gate Agents</h3><p>Boarding order, documents, seat changes, and special assistance.</p></article>
+      <article class="card"><h3>Security</h3><p>Screening, gate door controls, and ramp access compliance.</p></article>
+      <article class="card"><h3>Cabin Cleaners</h3><p>Quick turns: trash, lav service, galley restock, and safety card checks.</p></article>
+      <article class="card"><h3>Catering</h3><p>Loads meals, water, and service items; manages galley weights.</p></article>
+      <article class="card"><h3>Avionics Techs</h3><p>Inspect and troubleshoot navigation, radios, and flight deck systems.</p></article>
+      <article class="card"><h3>Runway Safety</h3><p>Prevents incursions with markings, lighting, hold‑short discipline.</p></article>
+      <article class="card"><h3>FOD Walks</h3><p>Foreign object debris patrols keep ramps and taxiways clear.</p></article>
+      <article class="card"><h3>NOTAMs</h3><p>Notices to Air Missions—temporary changes pilots and dispatchers brief.</p></article>
+      <article class="card"><h3>ATIS &amp; Clearance</h3><p>Automatic weather/airfield info and IFR clearances before push.</p></article>
+      <article class="card"><h3>Pushback</h3><p>Towbar/towbarless tugs coordinate with the cockpit and ground control.</p></article>
+      <article class="card"><h3>Marshalling</h3><p>Hand signals guide precise stand entry and parking alignment.</p></article>
+      <article class="card"><h3>APU &amp; GPU</h3><p>Auxiliary/ground power for electrics and air while engines are off.</p></article>
+      <article class="card"><h3>Briefings</h3><p>Pilots and cabin crew align on weather, alternates, MELs, and duties.</p></article>
+      <article class="card"><h3>Cross‑checks</h3><p>Door armed/disarmed verification; call‑and‑response to avoid error.</p></article>
+      <article class="card"><h3>Sterile Cockpit</h3><p>No nonessential talk below 10,000 feet to preserve focus.</p></article>
+      <article class="card"><h3>TCAS &amp; GPWS</h3><p>Collision and terrain warnings with standardized pilot responses.</p></article>
+      <article class="card"><h3>Alternate Planning</h3><p>Fuel and legal alternates for weather, runway work, or traffic.</p></article>
+      <article class="card"><h3>Time‑outs &amp; Duty</h3><p>Fatigue rules limit duty time; crews must remain legal to operate.</p></article>
+      <article class="card"><h3>Safety Management</h3><p>Hazard reporting and data trend analysis drive continuous improvement.</p></article>
+      <article class="card"><h3>First Aid &amp; AED</h3><p>Cabin crew trained for medical events with kits and defibrillators.</p></article>
     </div>
   </main>
 
@@ -59,8 +110,8 @@
         <a href="index.html">Home</a><a href="basics.html">Basics</a><a href="playbook.html">Playbook</a><a href="bts.html">BTS</a>
       </nav>
       <div class="contact-info">
-        <span>Email: <strong>hello@wingsacrossborders.site</strong></span>
-        <a href="https://www.faa.gov/passengers" target="_blank" rel="noopener">FAA Passengers</a>
+        <span>Email: <strong><a href="mailto:hello@wingsacrossborders.site">hello@wingsacrossborders.site</a></strong></span>
+        <a href="https://www.faa.gov/travelers" target="_blank" rel="noopener">FAA Travelers (Passengers)</a>
       </div>
     </div>
   </footer>

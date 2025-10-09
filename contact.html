@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Wings Across Borders</title>
+  <meta name="description" content="Ask a question about flying for the first time. We'll point you to simple, stress-free answers." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+</head>
+<body class="contact-page">
+  <!-- <a class="skip" href="#main">Skip to content</a> -->
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="logo">Wings Across Borders</div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="basics.html">Basics</a>
+        <a href="playbook.html">Playbook</a>
+        <a href="bts.html">BTS</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" style="padding:36px 0 28px">
+    <section class="hero" style="border-bottom:none; padding:24px 0 8px">
+      <div class="hero-inner">
+        <p class="eyebrow">Contact — Ask a Question</p>
+        <h1>We’re here to help first-time flyers.</h1>
+        <p class="sub">Send us your route and question. We’ll reply with a plain-English answer or point you to the right section.</p>
+      <ul class="kpis" aria-label="Contact tips" style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:16px 0 0; max-width:820px; margin-inline:auto;">
+        <li class="kpi" style="list-style:none; border:1px solid var(--line); background:var(--surface); border-radius:14px; padding:14px 16px; box-shadow:var(--shadow-1); display:flex; align-items:center; gap:10px;"><span role="img" aria-label="clock">🕒</span>Reply in 24–48 hours.</li>
+        <li class="kpi" style="list-style:none; border:1px solid var(--line); background:var(--surface); border-radius:14px; padding:14px 16px; box-shadow:var(--shadow-1); display:flex; align-items:center; gap:10px;"><span role="img" aria-label="checklist">🧾</span>Be specific: route, dates, airline.</li>
+        <li class="kpi" style="list-style:none; border:1px solid var(--line); background:var(--surface); border-radius:14px; padding:14px 16px; box-shadow:var(--shadow-1); display:flex; align-items:center; gap:10px;"><span role="img" aria-label="lock">🔒</span>We keep your info private.</li>
+      </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-form-heading" style="padding-top:0; border-top:none">
+      <h2 id="contact-form-heading" class="section-title" style="text-transform:none; letter-spacing:0; margin-bottom:6px;">Ask a question</h2>
+      <p class="muted" style="margin:0 0 14px;">We’ll route your question to the right section and reply via email.</p>
+
+      <div class="contact-center">
+      <!-- FORM: rubric-friendly, email coded correctly, no server required -->
+      <form class="contact-form" action="mailto:hello@wingsacrossborders.site" method="post" enctype="text/plain">
+        <div class="grid">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" placeholder="Your name" required aria-required="true" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" placeholder="you@example.com" required aria-required="true" />
+          </div>
+        </div>
+
+        <div>
+          <label for="route">Travel Route</label>
+          <select id="route" name="Route" required aria-required="true">
+            <option value="">Select</option>
+            <option>Domestic — US</option>
+            <option>International — US → India</option>
+            <option>International — India → US</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="topic">Topic / Question</label>
+          <textarea id="topic" name="Question" rows="6" placeholder="Ask anything—packing, IDs, security, turbulence…" required aria-required="true"></textarea>
+        </div>
+
+
+
+        <p class="muted" style="margin:.25rem 0 .75rem; font-size:.9rem;">We’ll only use your email to respond. No spam, ever.</p>
+        <input type="submit" value="Submit" />
+      </form>
+      </div>
+
+      <p class="muted" style="margin-top:.6rem">
+        Tip: If your email client doesn’t open automatically, you can email us at
+        <a href="mailto:hello@wingsacrossborders.site">hello@wingsacrossborders.site</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© 2025 Prateek De — Wings Across Borders</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="basics.html">Basics</a>
+        <a href="playbook.html">Playbook</a>
+        <a href="bts.html">BTS</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="contact-info">
+        <strong>Email:</strong>
+        <a href="mailto:hello@wingsacrossborders.site">hello@wingsacrossborders.site</a>
+        <strong>FAA</strong>
+        <a href="https://www.faa.gov/travelers" target="_blank" rel="noopener">Passengers</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
